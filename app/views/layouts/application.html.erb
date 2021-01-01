@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog3</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class ="header">
+      <h1 class ="h1">Blog</h1>
+          <div class="post">
+            <%= link_to "signin", new_user_session_path %>
+            <%= link_to "signout", destroy_user_session_path, method: :delete %>
+            <% if user_signed_in? %>
+            <a href="/tweets/new">NEW</a>
+            <% end %>
+          </div>
+    </header>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.h1 {
+  color:white;
+  padding-left: 50px;
+}
+.post {
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  padding-left:900px;
+  
+}
+.header {
+  background-color:teal;
+  height:50px;
+  display: flex;
+}
+.text {
+  border: auto;
+  border-color: gray;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.content {
+  margin: 200px;
+  background-color: #f4f4f4;
+  border: auto
+  
+}
+
+.more_list {
+  list-style-type:none;
+  display : flex;
+  justify-content:space-around ;
+  align-items:flex-end;
+
+}
+.hover {
+  background-color:#7fffd4;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
